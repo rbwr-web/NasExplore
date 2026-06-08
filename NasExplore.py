@@ -26,14 +26,11 @@ import time
 import requests
 from rich.console import Console
 from rich.panel import Panel
-from rich.progress import Progress, TextColumn, BarColumn, TaskProgressColumn
+from rich.progress import Progress, TextColumn, BarColumn
 
 # Initialize the rich console
 console = Console()
 
-if sys.platform == "win32":
-    os.system("chcp 65001 > nul")  # Forces UTF-8 encoding
-    os.system("cls")               # Clears and resets terminal sizing
 
 def fetch_nasa_data():
     # Public demo key for NASA API's
@@ -109,7 +106,7 @@ def main():
     console.print(Panel(explanation, title="[green3]Scientific Explanation[/green3]", border_style="green"))
     console.print("\n")
     
-    # Clickable link to the image
+    # Clickable link to the image (only works in some terminals, but it is worth a shot)
     console.print(f" [bold underline green3]View High-Res Image:[/bold underline green3] {hd_url}")
     console.print("\n")
     input("\nPress Enter to exit...")
