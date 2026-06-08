@@ -19,7 +19,7 @@ This program is going to include many tools for stuff including:
 ![Error Image](images/NasExplore%202.PNG)
 
 ### Normal Operation
-![Normal Output](images/NasExplore%202.PNG)
+![Normal Output](images/NasExplore%203.PNG)
 
 ---
 Keegan Muller 2026
